@@ -3,9 +3,9 @@ import './toggle-switch.css'
 function ToggleSwitch(props) {
 
   return (
-    <label class="switch">
+    <label className="switch">
       <input type="checkbox" />
-      <span class="toggle-switch"></span>
+      <span className="toggle-switch"></span>
     </label>
   );
 }
