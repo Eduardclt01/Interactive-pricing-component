@@ -3,3 +3,15 @@
   margin: auto;
   margin-top: 10rem;
 }
+
+@media (max-width: 1200px) {
+  .pricing-component {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .pricing-component {
+    width: 80%;
+  }
+}
