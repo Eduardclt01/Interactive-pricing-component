@@ -25,7 +25,7 @@ function PricingCalculations() {
 
   function onBillingFrequencyChange() {
     var newFrequency = appContext.state.billingFrequency == 'yearly' ? 'monthly' : 'yearly'
-    var newSliderValue =  appContext.state.billingFrequency == 'yearly' ? 600 : 50;
+    var newSliderValue =  appContext.state.billingFrequency == 'yearly' ? 50 : 600;
     appContext.actions.setBillingFrequency(newFrequency);
     appContext.actions.setUserAmountInput(newSliderValue);
   }
@@ -42,7 +42,7 @@ function PricingCalculations() {
 
       <div className="pricing-calculations__input">
         <div className="pricing-calculations__input--price-slider">
-          <Slider minRange={1}
+          <Slider minRange={0}
                   maxRange={sliderRange}
                   sliderStep={sliderStep}
                   userValue={appContext.state.userAmountInput}
