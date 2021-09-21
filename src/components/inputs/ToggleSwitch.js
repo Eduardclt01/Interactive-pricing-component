@@ -1,13 +1,10 @@
 import './toggle-switch.css'
 
 function ToggleSwitch(props) {
-  var value = props.switchValue;
-  var onCheckboxChange = props.onCheckboxChange;
-
   return (
-    <label className="switch">
-      <input onChange={onCheckboxChange} checked={value} type="checkbox" />
-      <span className="toggle-switch"></span>
+    <label className="toggle-switch">
+      <input onChange={props.onCheckboxChange} checked={props.value} type="checkbox" />
+      <span className="toggle-switch__thumb"></span>
     </label>
   );
 }

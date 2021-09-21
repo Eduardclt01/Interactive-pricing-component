@@ -1,14 +1,15 @@
 import './slider.css'
 
 function Slider(props) {
-  var minRange = props.minRange;
-  var maxRange = props.maxRange;
-  var value = props.userValue;
-  var onSliderChangeFunction = props.onSliderChangeFunction;
-  var sliderStep = props.sliderStep;
-
   return (
-    <input type="range" min={minRange} max={maxRange} onChange={onSliderChangeFunction} value={value} step={sliderStep} className="slider" id="customerPrice" />
+    <input type="range"
+          min={props.minRange}
+          max={props.maxRange}
+          onChange={props.onSliderChangeFunction}
+          value={props.value}
+          step={props.sliderStep}
+          className="slider"
+          id="customerPrice" />
   );
 }
 

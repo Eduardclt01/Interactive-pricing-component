@@ -4,6 +4,12 @@
   margin-top: 10rem;
 }
 
+.label-text{
+  font-weight: bold;
+  color: rgb(197, 197, 197);
+  font-size: .9rem;
+}
+
 @media (max-width: 1200px) {
   .pricing-component {
     width: 60%;

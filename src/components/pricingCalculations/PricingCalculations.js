@@ -17,8 +17,6 @@ function PricingCalculations() {
     return (appContext.state.userAmountInput * 3.5);
   }
 
-  // ------- event listeners -------
-
   function onSliderChange(event){
     appContext.actions.setUserAmountInput(event.target.value);
   }

@@ -3,12 +3,6 @@
   justify-content: space-between;
 }
 
-.label-text{
-  font-weight: bold;
-  color: rgb(197, 197, 197);
-  font-size: .9rem;
-}
-
 .pricing-calculations__output--pageviews{
   text-transform: uppercase;
   align-self: center;
@@ -22,12 +16,6 @@
   vertical-align: super;
   padding-left: 0.5rem;
 }
-
-
-.pricing-calculations__input--slider{
-  width: 100%;
-}
-
 
 .pricing-calculations__input--billing{
   display: flex;
